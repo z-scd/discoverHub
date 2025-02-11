@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full h-full overflow-x-hidden">
+    <header>
+      <!-- Navigation Menu -->
+      <nav
+        class="w-full h-[18vh] p-4 bg-transparent absolute z-20 flex items-center justify-around bg-slate-400"
+      >
+        <div class="flex w-full justify-between">
+          <img
+            src="Photos/logo/logo.png"
+            alt="Logo"
+            class="w-12 sm:w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 z-10"
+          />
+        </div>
+        <ul
+          class="hidden flex-col mr-0 bg-black font-bold gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 text-white"
+        >
+          <li class="mt-40"><a href="">Destinations</a></li>
+          <li class="nav-list-items"><a href="">Guides</a></li>
+          <li class="nav-list-items"><a href="">Deals</a></li>
+          <li class="nav-list-items"><a href="">Venues</a></li>
+          <li class="nav-list-items"><a href="">Log In</a></li>
+        </ul>
+        <i
+          id="menu"
+          class="ri-menu-2-fill hidden font-bold text-white lg:hidden"
+        ></i>
+      </nav>
+
+      <!-- hero section -->
+      <div class="relative bg-slate-800">
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.4)] z-10"
+        ></div>
+        <div class="swiper mySwiper w-full h-screen">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="Photos/hero/01.jpg"
+                class="w-full h-full object-cover"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Photos/hero/02.jpg"
+                class="w-full h-full object-cover"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Photos/hero/03.jpg"
+                class="w-full h-full object-cover"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Photos/hero/04.jpg"
+                class="w-full h-full object-cover"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="Photos/hero/05.jpg"
+                class="w-full h-full object-cover"
+                alt="Slide 3"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute z-20 top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] flex justify-center items-center flex-col gap-0.5 sm:gap-1 md:gap-2 lg:gap-3 2xl:gap-4"
+        >
+          <p
+            class="text-lg self-start sm:self-center sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white tracking-tighter"
+          >
+            Discover Your Dream Destination
+          </p>
+          <p class="text-sm text-white leading-5 sm:text-sm">
+            Best deals on flights, hotels & holiday packages
+          </p>
+
+          <div class="flex flex-col w-full sm:flex-row mb-2 mt-2 gap-2">
+            <input
+              type="text"
+              placeholder="Destination"
+              class="p-1 w-full sm:w-36 lg:w-48 2xl:w-56 rounded-lg text-lg"
+            />
+            <input
+              type="date"
+              class="p-1 w-full sm:w-36 lg:w-48 2xl:w-56 rounded-lg text-lg"
+            />
+            <input
+              type="number"
+              placeholder="Guests"
+              class="p-1 w-full sm:w-36 lg:w-48 2xl:w-56 rounded-lg text-lg"
+            />
+            <select
+              class="p-1 w-full sm:w-36 lg:w-48 2xl:w-56 rounded-lg text-lg"
+            >
+              <option value="type1">Type</option>
+              <option value="type2">Package</option>
+              <option value="type3">Flight</option>
+            </select>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row w-full gap-2">
+            <button
+              class="bg-orange-600 hover:bg-orange-700 text-white py-1 px-2 w-full rounded-lg text-lg transition duration-200"
+            >
+              <i class="ri-search-2-line"></i> Find My Trip
+            </button>
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-2 w-full rounded-lg text-lg transition duration-200"
+            >
+              <i class="ri-walk-line"></i> Explore Now
+            </button>
+          </div>
+
+          <!-- trust badges -->
+
+          <div class="flex flex-col gap-2 sm:flex-row items-center">
+            <div class="flex mt-4">
+              <img
+                src="./Photos/testimonial-users/john-devis.jpg"
+                class="w-6 h-6 sm:w-12 sm:h-12 rounded-full mr-[-12px] sm:mr-[-24px] border"
+                alt=""
+              /><img
+                src="./Photos/testimonial-users/jonas.jpg"
+                class="w-6 h-6 sm:w-12 sm:h-12 rounded-full mr-[-12px] sm:mr-[-24px] border"
+                alt=""
+              /><img
+                src="./Photos/testimonial-users/sakura-haruno.jpg"
+                class="w-6 h-6 sm:w-12 sm:h-12 rounded-full mr-[-12px] sm:mr-[-24px] border"
+                alt=""
+              />
+              <img
+                src="./Photos/testimonial-users/shubhapriya-basu.jpg"
+                class="w-6 h-6 sm:w-12 sm:h-12 rounded-full mr-[-12px] sm:mr-[-24px] border"
+                alt=""
+              /><img
+                src="./Photos/testimonial-users/tsunade-senju.jpg"
+                class="w-6 h-6 sm:w-12 sm:h-12 rounded-full mr-[-12px] sm:mr-[-24px] border"
+                alt=""
+              />
+            </div>
+            <p
+              class="sm:ml-8 sm:self-end md:pb-2 text-white text-sm font-semibold"
+            >
+              Trusted by 10,000+ Travelers
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- about us section -->
+      <section
+        id="about-us"
+        class="flex flex-col xl:px-[12vw] m-2 sm:m-8 md:flex-row lg:m-12 mt-12 md:mt-16 lg:mt-24 xl:mt-36 gap-8 lg:gap-14"
+      >
+        <div id="side-image">
+          <img
+            src="./Photos/about-us/about-us.jpg"
+            alt=""
+            class="rounded-3xl w-full h-full lg:w-[32rem] xl:w-[36rem]"
+          />
+        </div>
+        <div id="description-about-us">
+          <h2
+            class="text-xl lg:text-2xl font-semibold uppercase text-orange-400 mb-6"
+          >
+            about us
+          </h2>
+          <h2
+            class="text-xl lg:text-2xl 2xl:text-4xl font-semibold capitalize mb-6"
+          >
+            The story behind our journey
+          </h2>
+          <p class="text-[#555] mb-6 font-normal text-sm md:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            aliquid illum quaerat possimus adipisci quae aspernatur
+            exercitationem dolores, ipsa molestias.
+          </p>
+          <ul
+            id="offers"
+            class="text-xl font-semibold mb-8 flex flex-col gap-2"
+          >
+            <li>
+              <i class="ri-thumb-up-line mr-4"></i>Great travel experience
+            </li>
+            <li>
+              <i class="ri-price-tag-3-line mr-4"></i>Competetive pricing offers
+            </li>
+          </ul>
+          <h2
+            class="text-sm font-bold uppercase tracking-wider border-4 inline-block p-3 border-orange-500"
+          >
+            Read more
+          </h2>
+        </div>
+      </section>
+
+      <section
+        id="top-destination"
+        class="m-2 sm:m-8 lg:m-12 mt-12 md:mt-16 lg:mt-24 xl:mt-36"
+      >
+        <div
+          id="description-top-destination"
+          class="lg:flex lg:justify-between mb-8"
+        >
+          <div>
+            <h2
+              class="text-xl font-semibold lg:text-2xl 2xl:text-4xl capitalize mb-6"
+            >
+              Top Destination
+            </h2>
+            <p class="text-[#555] mb-6 font-normal text-sm md:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, excepturi! Sapiente fuga.
+            </p>
+          </div>
+          <div
+            id="see-more-destinations"
+            class="font-semibold inline-block self-end p-2 mt-6 mb-6 border bg-orange-400 text-white rounded-md"
+          >
+            See more
+            <i class="ri-arrow-right-line"></i>
+          </div>
+        </div>
+        <div id="destinatin-cards" class="flex flex-col lg:flex-row gap-12">
+          <div class="relative bg-cover">
+            <img
+              class="rounded-xl"
+              src="./Photos/top-destination/santorini.jpg"
+              alt=""
+            />
+            <div
+              class="flex justify-between text-white w-full absolute bottom-0 p-2 md:p-4 lg:p-2 rounded-xl backdrop-blur-md"
+            >
+              <div id="destination-details ">
+                <h3 class="font-semibold text-lg mb-1">Santorini, Greece</h3>
+                <p>White Cliffs</p>
+              </div>
+              <div id="price">
+                <h3><i class="ri-money-dollar-circle-line"></i>269.99</h3>
+                <h3><i class="ri-group-line"></i> 2 Persons</h3>
+              </div>
+            </div>
+          </div>
+          <div class="relative bg-cover">
+            <img
+              class="rounded-xl"
+              src="./Photos/top-destination/kyoto.jpg"
+              alt=""
+            />
+            <div
+              class="flex text-white justify-between w-full absolute bottom-0 p-2 md:p-4 lg:p-2 rounded-xl backdrop-blur-md"
+            >
+              <div id="destination-details ">
+                <h3 class="font-semibold mb-1">Kyoto, Japan</h3>
+                <p>Cherry Blossoms</p>
+              </div>
+              <div id="price">
+                <h3><i class="ri-money-dollar-circle-line"></i>269.99</h3>
+                <h3><i class="ri-group-line"></i> 2 Persons</h3>
+              </div>
+            </div>
+          </div>
+          <div class="relative bg-cover">
+            <img
+              class="rounded-xl"
+              src="./Photos/top-destination/dubai.jpg"
+              alt=""
+            />
+            <div
+              class="flex text-white justify-between w-full absolute bottom-0 p-2 md:p-4 lg:p-2 rounded-xl backdrop-blur-md"
+            >
+              <div id="destination-details ">
+                <h3 class="font-semibold mb-1">Dubai, UAE</h3>
+                <p>Futuristic Skyline</p>
+              </div>
+              <div id="price">
+                <h3><i class="ri-money-dollar-circle-line"></i>269.99</h3>
+                <h3><i class="ri-group-line"></i> 2 Persons</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="tour-packages"
+        class="m-2 sm:m-8 lg:m-12 mt-8 md:mt-16 lg:mt-24 xl:mt-36"
+      >
+        <div class="flex flex-col gap-4 mb-8">
+          <h2
+            class="text-xl font-semibold lg:text-2xl 2xl:text-4xl capitalize mb-4 text-center"
+          >
+            Lorem ipsum dolor sit amet
+          </h2>
+          <p
+            class="text-[#555] mb-6 font-normal text-sm text-center md:text-lg"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, ut
+            fugiat. Esse assumenda, explicabo quaerat tempore repellendus, vitae
+          </p>
+        </div>
+        <div class="flex justify-center items-center gap-4 mb-8">
+          <p
+            class="pt-2 pb-2 pl-4 pr-4 bg-orange-400 outline outline-1 rounded-lg text-white font-semibold"
+          >
+            All
+          </p>
+          <p
+            class="pt-2 pb-2 pl-4 pr-4 bg-white outline outline-1 rounded-lg text-black font-semibold"
+          >
+            Asia
+          </p>
+          <p
+            class="pt-2 pb-2 pl-4 pr-4 bg-white outline outline-1 rounded-lg text-black font-semibold"
+          >
+            Europe
+          </p>
+          <p
+            class="pt-2 pb-2 pl-4 pr-4 bg-white outline outline-1 rounded-lg text-black font-semibold"
+          >
+            US
+          </p>
+        </div>
+        <div
+          id="package-cards"
+          class="flex gap-12 flex-col lg:flex-row lg:gap-6"
+        >
+          <div id="package-card" class="rounded-xl border-2">
+            <img
+              src="./Photos/package-cards/banff.jpg"
+              alt="Banff"
+              class="rounded-t-xl"
+            />
+            <div class="flex flex-col gap-2 mt-6 ml-2">
+              <p class="text-orange-300">
+                <i class="ri-map-pin-2-line"></i> Canada
+              </p>
+              <h3 class="font-semibold text-xl">Banff</h3>
+              <div class="flex gap-4 text-orange-500">
+                <p><i class="ri-group-line"></i> 10 Persons</p>
+                <p><i class="ri-time-line"></i> 5 Days</p>
+              </div>
+              <p class="text-orange-300">⭐⭐⭐⭐⭐ (15)</p>
+              <hr />
+              <p class="text-orange-500 mb-4">Price: $369</p>
+            </div>
+          </div>
+          <div id="package-card" class="rounded-xl border-2">
+            <img
+              src="./Photos/package-cards/mach-picchu.jpg"
+              alt="Machu Picchu, Peru"
+              class="rounded-t-xl"
+            />
+            <div class="flex flex-col gap-2 mt-6 ml-2">
+              <p class="text-orange-300">
+                <i class="ri-map-pin-2-line"></i> Peru
+              </p>
+              <h3 class="font-semibold text-xl">Machu Picchu</h3>
+              <div class="flex gap-4 text-orange-500">
+                <p><i class="ri-group-line"></i> 10 Persons</p>
+                <p><i class="ri-time-line"></i> 5 Days</p>
+              </div>
+              <p class="text-orange-300">⭐⭐⭐⭐⭐ (15)</p>
+              <hr />
+              <p class="text-orange-500 mb-4">Price: $369</p>
+            </div>
+          </div>
+          <div id="package-card" class="rounded-xl border-2">
+            <img
+              src="./Photos/package-cards/paris.jpg"
+              alt="Paris, France"
+              class="rounded-t-xl"
+            />
+            <div class="flex flex-col gap-2 mt-6 ml-2">
+              <p class="text-orange-300">
+                <i class="ri-map-pin-2-line"></i> France
+              </p>
+              <h3 class="font-semibold text-xl">Paris</h3>
+              <div class="flex gap-4 text-orange-500">
+                <p><i class="ri-group-line"></i> 10 Persons</p>
+                <p><i class="ri-time-line"></i> 5 Days</p>
+              </div>
+              <p class="text-orange-300">⭐⭐⭐⭐⭐ (15)</p>
+              <hr />
+              <p class="text-orange-500 mb-4">Price: $369</p>
+            </div>
+          </div>
+          <div id="package-card" class="rounded-xl border-2">
+            <img
+              src="./Photos/package-cards/paris.jpg"
+              alt="Paris, France"
+              class="rounded-t-xl"
+            />
+            <div class="flex flex-col gap-2 mt-6 ml-2">
+              <p class="text-orange-300">
+                <i class="ri-map-pin-2-line"></i> France
+              </p>
+              <h3 class="font-semibold text-xl">Paris</h3>
+              <div class="flex gap-4 text-orange-500">
+                <p><i class="ri-group-line"></i> 10 Persons</p>
+                <p><i class="ri-time-line"></i> 5 Days</p>
+              </div>
+              <p class="text-orange-300">⭐⭐⭐⭐⭐ (15)</p>
+              <hr />
+              <p class="text-orange-500 mb-4">Price: $369</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tour-type" class="m-2 sm:m-8 md:mt-16 lg:mt-24 xl:mt-36">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <div>
+            <h2
+              class="text-xl font-semibold lg:text-2xl 2xl:text-4xl capitalize mb-4 text-center"
+            >
+              Pick a tour type
+            </h2>
+            <p
+              class="text-[#555] mb-6 font-normal text-sm text-center md:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              nam, vel at alias labore et commodi
+            </p>
+          </div>
+          <div id="tour-cards" class="flex flex-col lg:flex-row gap-12">
+            <div id="card" class="rounded-xl relative">
+              <img
+                src="./Photos/tour-types/romance.jpg"
+                alt="Adventure"
+                class="rounded-xl"
+              />
+              <p
+                class="absolute bottom-0 right-0 p-1 m-1 text-white text-xs uppercase font-semibold rounded-xl backdrop-blur-sm"
+              >
+                romance
+              </p>
+            </div>
+            <div id="card" class="rounded-xl relative">
+              <img
+                src="./Photos/tour-types/culture.jpg"
+                alt="Adventure"
+                class="rounded-xl"
+              />
+              <p
+                class="absolute bottom-0 right-0 p-1 m-1 text-white text-xs uppercase font-semibold rounded-xl backdrop-blur-sm"
+              >
+                culture
+              </p>
+            </div>
+            <div id="card" class="rounded-xl relative">
+              <img
+                src="./Photos/tour-types/adventure.jpg"
+                alt="Adventure"
+                class="rounded-xl"
+              />
+              <p
+                class="absolute bottom-0 right-0 p-1 m-1 text-white text-xs uppercase font-semibold rounded-xl backdrop-blur-sm"
+              >
+                Adventure
+              </p>
+            </div>
+          </div>
+          <div class="border-2 border-orange-500 p-2 rounded-xl inline-block">
+            View more
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-cover text-white text-center relative md:mt-16 lg:mt-24 xl:mt-36"
+        style="background-image: url('./Photos/tour-types/background.jpg')"
+      >
+        <div
+          class="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.5)]"
+        ></div>
+        <div
+          class="flex items-center flex-col gap-4 md:gap-6 p-8 sm:p-20 justify-center"
+        >
+          <h2 class="text-sm lg:text-lg z-10 mt-16 sm:mt-36">
+            All exclusive tour and packages
+          </h2>
+          <h2
+            class="text-base md:text-xl z-10 font-semibold lg:text-2xl 2xl:text-4xl capitalize mb-4 text-center"
+          >
+            No metter the size of tour group, whether small or corporate, we
+            have the ideal package tailord just for you!
+          </h2>
+          <div
+            class="border-2 border-white p-2 rounded-xl inline-block backdrop-blur-sm"
+          >
+            View more
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="why-choose-us"
+        class="m-2 xl:px-[12vw] sm:m-8 md:mt-16 lg:mt-24 xl:mt-36"
+      >
+        <div class="flex flex-col sm:flex-row xl:gap-12 gap-8">
+          <div>
+            <h2
+              class="text-xl font-semibold lg:text-2xl 2xl:text-4xl capitalize mb-4"
+            >
+              Why choose us
+            </h2>
+            <p class="text-[#555] mb-6 font-normal text-sm md:text-lg">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+              nulla sed expedita nostrum odit sint repudiandae quod sunt
+            </p>
+            <ul
+              class="text-md text-[#222] font-semibold mb-8 flex flex-col gap-3"
+            >
+              <li>
+                <i class="ri-custom-size mr-2"></i
+                ><span>Personalized Travel Plans</span>
+              </li>
+              <li>
+                <i class="ri-discount-percent-line mr-2"></i>
+                <span>Exclusive Deals & Discounts</span>
+              </li>
+              <li>
+                <i class="ri-service-line mr-2"></i
+                ><span>Hassle-Free Booking & Assistance</span>
+              </li>
+              <li>
+                <i class="ri-brain-2-line mr-2"></i
+                ><span>Expert Local & International Knowledge</span>
+              </li>
+              <li>
+                <i class="ri-questionnaire-line mr-2"></i>
+                <span>24/7 Customer Support</span>
+              </li>
+            </ul>
+            <div
+              class="border-2 border-orange-500 p-2 rounded-xl text-center inline-block"
+            >
+              View more
+            </div>
+          </div>
+          <div>
+            <img
+              class="rounded-xl sm:max-w-96 h-full object-cover"
+              src="./Photos/why-choose-us/trust-us.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section-testimonial"
+        class="m-2 sm:m-8 lg:m-12 mt-8 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-36"
+      >
+        <div class="testimonial-heading">
+          <h2
+            class="text-xl font-semibold lg:text-2xl 2xl:text-4xl capitalize mb-4"
+          >
+            Testimonials
+          </h2>
+          <p class="text-[#555] mb-6 font-normal text-sm md:text-lg">
+            Travelers Review After Successful Tours
+          </p>
+        </div>
+        <div class="flex gap-12 flex-col xl:flex-row lg:gap-6">
+          <div class="flex flex-col sm:flex-row gap-6">
+            <div
+              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black"
+            >
+              <img
+                src="Photos/testimonial-users/john-devis.jpg"
+                class="rounded-full w-24 h-24 mb-4"
+                alt=""
+              />
+              <p class="text-lg font-semibold mb-1">John D.</p>
+              <p class="text-sm mb-6">Travel Vlogger</p>
+              <p
+                class="text-[#222] text-center mb-6 font-normal leading-6 text-sm md:text-lg"
+              >
+                DiscoverHub made our trip stress-free. They handled everything,
+                from booking to planning activities.
+              </p>
+              <div class="text-2xl">★★★★☆</div>
+            </div>
+            <div
+              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black"
+            >
+              <img
+                src="Photos/testimonial-users/jonas.jpg"
+                class="rounded-full w-24 h-24 mb-4"
+                alt=""
+              />
+              <p class="text-lg font-semibold mb-1">Jonas S.</p>
+              <p class="text-sm mb-6">Digital Creator</p>
+              <p
+                class="text-[#222] text-center mb-6 font-normal leading-6 text-sm md:text-lg"
+              >
+                The DiscoverHub team truly listened to our needs. They created a
+                custom itinerary that was perfect for us.
+              </p>
+              <div class="text-2xl">★★★★★</div>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-6">
+            <div
+              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black"
+            >
+              <img
+                src="Photos/testimonial-users/shikamaru-nara.jpg"
+                class="rounded-full w-24 h-24 mb-4"
+                alt=""
+              />
+              <p class="text-lg font-semibold mb-1">Shikamaru N.</p>
+              <p class="text-sm mb-6">Travel Vlogger</p>
+              <p
+                class="text-[#222] text-center mb-6 font-normal leading-6 text-sm md:text-lg"
+              >
+                The knowledgeable agents at DiscoverHub provided valuable advice
+                and recommendations.
+              </p>
+              <div class="text-2xl">★★★☆☆</div>
+            </div>
+            <div
+              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black"
+            >
+              <img
+                src="Photos/testimonial-users/shikamaru-nara.jpg"
+                class="rounded-full w-24 h-24 mb-4"
+                alt=""
+              />
+              <p class="text-lg font-semibold mb-1">Shikamaru N.</p>
+              <p class="text-sm mb-6">Travel Vlogger</p>
+              <p
+                class="text-[#222] text-center mb-6 font-normal leading-6 text-sm md:text-lg"
+              >
+                The knowledgeable agents at DiscoverHub provided valuable advice
+                and recommendations.
+              </p>
+              <div class="text-2xl">★★★☆☆</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="subscription-form"
+        class="grid gap-12 grid-cols-1 md:grid-cols-2 place-items-center m-2 sm:m-8 lg:m-12 mt-8 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-36 xl:px-[12vw]"
+      >
+        <div class="p-2">
+          <h2 class="text-xl mb-8 font-semibold">
+            Subscribe & Explore – Get the Best Travel Deals & Tips Straight to
+            Your Inbox!
+          </h2>
+          <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <label for="">Name</label>
+            <input
+              class="bg-transparent p-1 rounded-xl border border-orange-800"
+              type="text"
+            />
+            <label for="">email</label>
+            <input
+              class="bg-transparent p-1 rounded-xl border border-orange-800"
+              type="text"
+            />
+            <button
+              class="py-2 col-start-2 inline-block rounded-full bg-orange-400 duration-300 text-blue-200 font-semibold hover:bg-orange-700 uppercase"
+            >
+              subscribe
+            </button>
+          </form>
+        </div>
+        <div class="w-full flex justify-end">
+          <img
+            class="rounded-full object-cover p-4 border-8 border-white max-w-80"
+            src="https://images.pexels.com/photos/3646196/pexels-photo-3646196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="grid md:grid-cols-2 grid-cols-1 gap-12 items-center m-2 p-12 md:p-0 sm:m-8 lg:m-12 mt-8 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-36"
+    >
+      <div class="grid grid-cols-2 max-[450px]:grid-cols-1 gap-12 w-full">
+        <div id="footer-logo-and-story">
+          <img src="./Photos/logo/logo.png" class="w-36" alt="" />
+          <p class="text-sm leading-6">
+            DiscoverHub turned dreams into journeys, handling flights, hotels,
+            and itineraries, ensuring seamless adventures filled with
+            unforgettable experiences.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Follow us</h2>
+          <ul>
+            <li><i class="mr-2 text-xl ri-facebook-line"></i>Facebook</li>
+            <li><i class="mr-2 text-xl ri-instagram-line"></i>Instagram</li>
+            <li><i class="mr-2 text-xl ri-twitter-x-line"></i>X</li>
+            <li><i class="mr-2 text-xl ri-linkedin-line"></i>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 max-[450px]:grid-cols-1 w-full gap-12">
+        <div>
+          <h2 class="text-xl font-semibold mb-4">About us</h2>
+          <ul>
+            <li><i class="mr-2 text-xl ri-file-line"></i>Our story</li>
+            <li><i class="mr-2 text-xl ri-briefcase-line"></i>Jobs</li>
+            <li><i class="mr-2 text-xl ri-question-answer-line"></i>T&C</li>
+            <li><i class="mr-2 text-xl ri-question-mark"></i>FAQ</li>
+            <li><i class="mr-2 text-xl ri-news-line"></i>Blogs & Tips</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Support</h2>
+            <ul>
+              <li>
+                <i class="mr-2 text-xl ri-hand-heart-line"></i>Customer Support
+              </li>
+              <li>
+                <i class="mr-2 text-xl font-semi-bold ri-eye-off-line"></i>
+                Privacy & Policy
+              </li>
+              <li><i class="mr-2 text-xl ri-phone-line"></i>Contact us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+      integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="Script/script.js"></script>
+  </body>
+</html>

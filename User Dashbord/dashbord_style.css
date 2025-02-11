@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #40707c;
+}
+
+nav span {
+  padding: 0.8rem, 1.2rem;
+}
+
+nav span img {
+  width: 150px;
+}
+
+nav span ul {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+nav span li {
+  transition: all 0.5s;
+}
+
+nav span li:link,
+nav span li:visited {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+nav span li:active {
+  color: orange;
+}
+
+nav span li:last-child {
+  margin-right: 4.8rem;
+}
+
+nav span li:hover {
+  transform: scale(1.2);
+}
+
+.main-dashboard {
+  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 4.8rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  background-color: #201e43;
+  color: #f7f7f7;
+  padding: 4.8rem;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #fff;
+}
+
+.profile-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-details,
+.menu {
+  background-color: #40707c;
+  padding: 3.2rem;
+  border: 1px solid #fff;
+  border-radius: 12px;
+}
+
+.profile-details p,
+.menu p {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.menu {
+  background-color: #487e8c;
+}
+
+.menu p {
+  text-align: start;
+  background-color: #30545d;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "discoverhub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./CSS/input.css -o ./CSS/style.css",
+    "watch": "npx tailwindcss -i ./CSS/input.css -o ./CSS/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
