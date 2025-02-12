@@ -1,8 +1,11 @@
 const allDivs = document.querySelectorAll("div");
+const footer = document.querySelector("footer");
+const allSections = document.querySelectorAll("section");
+const allElements = [allSections, footer];
 
 document.addEventListener("scroll", () => {
-  document.querySelectorAll("#about-us").forEach((el) => {
-    const speed = 0.05;
+  allElements.forEach((el) => {
+    const speed = 0.1;
     const yOffset = window.scrollY * speed;
     el.style.transform = `translateY(${yOffset}px)`;
   });
