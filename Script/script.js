@@ -1,14 +1,54 @@
-const allDivs = document.querySelectorAll("div");
-const footer = document.querySelector("footer");
-const allSections = document.querySelectorAll("section");
-const allElements = [allSections, footer];
+const elementsForAnimateY = [
+  "#tour-type div",
+  "#exclusive-packages",
+  "#section-testimonial div",
+  "#top-destination div",
+  "#tour-packages div",
+  "footer div",
+];
 
-document.addEventListener("scroll", () => {
-  allElements.forEach((el) => {
-    const speed = 0.1;
-    const yOffset = window.scrollY * speed;
-    el.style.transform = `translateY(${yOffset}px)`;
+const elementsForAnimateX = [
+  "#sf-description",
+  "#sf-image",
+  "#wcu-description",
+  "#wcu-image",
+  "#au-image",
+  "#au-description",
+];
+
+const animateX = function (el, sign) {
+  gsap.from(el, {
+    ease: true,
+    scrollTrigger: {
+      trigger: el,
+      start: "top 95%%",
+      end: "top 30%",
+    },
+    opacity: 0,
+    x: `${sign}20%`,
+    duration: 0.35,
   });
+};
+
+const animateY = function (el) {
+  gsap.from(el, {
+    ease: true,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: el,
+      start: "top 95%",
+      end: "top 30%",
+    },
+    opacity: 0,
+    y: `10%`,
+    duration: 0.35,
+  });
+};
+
+elementsForAnimateY.forEach((el) => animateY(el));
+elementsForAnimateX.forEach((el, index) => {
+  let sign = index % 2 == 0 ? "-" : "+";
+  animateX(el, sign);
 });
 
 const swiper = new Swiper(".mySwiper", {
