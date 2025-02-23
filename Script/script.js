@@ -32,7 +32,7 @@ const animateX = function (el, sign) {
 
 const animateY = function (el) {
   gsap.from(el, {
-    ease: true,
+    ease: "power3.EaseInOut",
     stagger: 0.1,
     scrollTrigger: {
       trigger: el,
@@ -41,7 +41,7 @@ const animateY = function (el) {
     },
     opacity: 0,
     y: `10%`,
-    duration: 0.35,
+    duration: 0.5,
   });
 };
 

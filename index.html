@@ -15,14 +15,19 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <style>
+      html::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
   </head>
-  <body class="w-full h-full overflow-x-hidden bg-[#c3fae8]">
+  <body class="w-full h-full overflow-x-hidden bg-[#e6fcf5]">
     <header>
       <!-- Navigation Menu -->
       <nav
-        class="w-full h-[18vh] p-4 bg-transparent absolute z-20 flex items-center justify-around"
+        class="w-full h-[18vh] p-4 bg-transparent absolute z-20 flex justify-between sm:items-center"
       >
-        <div class="flex w-full justify-between">
+        <div>
           <img
             src="Photos/logo/logo.png"
             alt="Logo"
@@ -30,18 +35,15 @@
           />
         </div>
         <ul
-          class="hidden flex-col mr-0 bg-black font-bold gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 text-white"
+          class="mr-0 md:flex font-bold gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 text-white hidden"
         >
-          <li class="mt-40"><a href="">Destinations</a></li>
+          <li class=""><a href="">Destinations</a></li>
           <li class="nav-list-items"><a href="">Guides</a></li>
           <li class="nav-list-items"><a href="">Deals</a></li>
           <li class="nav-list-items"><a href="">Venues</a></li>
           <li class="nav-list-items"><a href="">Log In</a></li>
         </ul>
-        <i
-          id="menu"
-          class="ri-menu-2-fill hidden font-bold text-white lg:hidden"
-        ></i>
+        <i id="menu" class="ri-menu-2-fill font-bold md:hidden text-white"></i>
       </nav>
 
       <!-- hero section -->
@@ -177,7 +179,7 @@
 
     <main>
       <!-- about us section -->
-      <section id="about-us">
+      <section id="about-us" class="">
         <div
           class="flex flex-col xl:px-[12vw] m-2 sm:m-8 md:flex-row lg:m-12 mt-12 md:mt-16 lg:mt-24 xl:mt-36 gap-8 lg:gap-14"
         >
@@ -226,7 +228,9 @@
       </section>
 
       <section id="top-destination">
-        <div class="m-2 sm:m-8 lg:m-12 mt-12 md:mt-16 lg:mt-24 xl:mt-36">
+        <div
+          class="m-2 bg-[#63e6be] p-12 rounded-xl sm:m-8 lg:m-12 mt-12 md:mt-16 lg:mt-24 xl:mt-36"
+        >
           <div
             id="description-top-destination"
             class="lg:flex lg:justify-between mb-8"
@@ -354,7 +358,7 @@
             id="package-cards"
             class="flex gap-12 flex-col lg:flex-row lg:gap-6"
           >
-            <div id="package-card-1" class="rounded-xl border-2">
+            <div id="package-card-1" class="rounded-xl bg-[#c3fae8]">
               <img
                 src="./Photos/package-cards/banff.jpg"
                 alt="Banff"
@@ -374,7 +378,7 @@
                 <p class="text-orange-500 mb-4">Price: $369</p>
               </div>
             </div>
-            <div id="package-card-2" class="rounded-xl border-2">
+            <div id="package-card-2" class="rounded-xl bg-[#c3fae8]">
               <img
                 src="./Photos/package-cards/mach-picchu.jpg"
                 alt="Machu Picchu, Peru"
@@ -394,7 +398,7 @@
                 <p class="text-orange-500 mb-4">Price: $369</p>
               </div>
             </div>
-            <div id="package-card-3" class="rounded-xl border-2">
+            <div id="package-card-3" class="rounded-xl bg-[#c3fae8]">
               <img
                 src="./Photos/package-cards/paris.jpg"
                 alt="Paris, France"
@@ -410,11 +414,11 @@
                   <p><i class="ri-time-line"></i> 5 Days</p>
                 </div>
                 <p class="text-orange-300">⭐⭐⭐⭐⭐ (15)</p>
-                <hr />
+                <hr class="bg-[#099268]" />
                 <p class="text-orange-500 mb-4">Price: $369</p>
               </div>
             </div>
-            <div id="package-card-4" class="rounded-xl border-2">
+            <div id="package-card-4" class="rounded-xl bg-[#c3fae8]">
               <img
                 src="./Photos/package-cards/paris.jpg"
                 alt="Paris, France"
@@ -440,7 +444,7 @@
 
       <section id="tour-type">
         <div
-          class="flex flex-col justify-center items-center gap-4 m-2 sm:m-8 md:mt-16 lg:mt-24 xl:mt-36"
+          class="flex rounded-xl bg-[#63e6be] flex-col justify-center items-center gap-4 m-2 sm:m-8 md:mt-16 lg:mt-24 xl:mt-36 p-8"
         >
           <div>
             <h2
@@ -530,7 +534,7 @@
 
       <section
         id="why-choose-us"
-        class="m-2 px-4 py-12 rounded-xl shadow-md shadow-[#099268] bg-[#63e6be] xl:px-[12vw] sm:m-8 md:mt-16 lg:mt-24 xl:mt-36"
+        class="m-2 px-4 py-12 rounded-xl shadow-sm shadow-[#099268] bg-[#63e6be] xl:px-[12vw] sm:m-8 md:mt-16 lg:mt-24 xl:mt-36"
       >
         <div class="flex flex-col sm:flex-row xl:gap-12 gap-8">
           <div id="wcu-description">
@@ -600,7 +604,7 @@
         <div class="flex gap-12 flex-col xl:flex-row lg:gap-6">
           <div class="flex flex-col sm:flex-row gap-6">
             <div
-              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black bg-gradient-to-bl from-[#e6fcf5] to-[#63e6be]"
+              class="flex rounded-xl flex-col p-8 items-center justify-center bg-gradient-to-bl from-[#96f2d7] to-[#0ca678]"
             >
               <img
                 src="Photos/testimonial-users/john-devis.jpg"
@@ -618,7 +622,7 @@
               <div class="text-2xl">★★★★☆</div>
             </div>
             <div
-              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black bg-gradient-to-br from-[#e6fcf5] to-[#63e6be]"
+              class="flex rounded-xl flex-col p-8 items-center justify-center bg-gradient-to-br from-[#96f2d7] to-[#0ca678]"
             >
               <img
                 src="Photos/testimonial-users/jonas.jpg"
@@ -638,7 +642,7 @@
           </div>
           <div class="flex flex-col sm:flex-row gap-6">
             <div
-              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black bg-gradient-to-bl from-[#e6fcf5] to-[#63e6be]"
+              class="flex rounded-xl flex-col p-8 items-center justify-center bg-gradient-to-bl from-[#96f2d7] to-[#0ca678]"
             >
               <img
                 src="Photos/testimonial-users/shikamaru-nara.jpg"
@@ -656,7 +660,7 @@
               <div class="text-2xl">★★★☆☆</div>
             </div>
             <div
-              class="flex rounded-xl flex-col p-8 items-center justify-center border-2 border-black bg-gradient-to-br from-[#e6fcf5] to-[#63e6be]"
+              class="flex rounded-xl flex-col p-8 items-center justify-center bg-gradient-to-br from-[#96f2d7] to-[#0ca678]"
             >
               <img
                 src="Photos/testimonial-users/shikamaru-nara.jpg"
@@ -679,7 +683,7 @@
 
       <section id="subscription-form">
         <div
-          class="bg-[#63e6be] shadow-[#099268] shadow-md px-4 py-12 rounded-xl grid gap-12 grid-cols-1 md:grid-cols-2 place-items-center m-2 sm:m-8 lg:m-12 mt-8 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-36 xl:px-[12vw]"
+          class="bg-[#63e6be] shadow-[#099268] shadow-sm px-4 py-12 rounded-xl grid gap-12 grid-cols-1 md:grid-cols-2 items-center m-2 sm:m-8 lg:m-12 mt-8 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-36 xl:px-[12vw]"
         >
           <div id="sf-description" class="p-2">
             <h2 class="text-xl mb-8 font-semibold">
@@ -692,7 +696,7 @@
                 class="bg-transparent p-1 rounded-xl border border-orange-800"
                 type="text"
               />
-              <label for="">email</label>
+              <label for="">Email</label>
               <input
                 class="bg-transparent p-1 rounded-xl border border-orange-800"
                 type="text"
@@ -704,9 +708,9 @@
               </button>
             </form>
           </div>
-          <div id="sf-image" class="w-full flex justify-end">
+          <div id="sf-image" class="w-full flex justify-center md:justify-end">
             <img
-              class="rounded-full object-cover border-8 border-white max-w-80"
+              class="md:rounded-full object-cover md:border-8 border-white w-full md:max-w-80"
               src="https://images.pexels.com/photos/3646196/pexels-photo-3646196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
@@ -716,7 +720,7 @@
     </main>
 
     <footer
-      class="grid md:grid-cols-2 grid-cols-1 gap-12 items-center p-12 md:p-0 sm:p-8 lg:p-12 mt-8 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-36 bg-[#63e6be]"
+      class="grid md:grid-cols-2 grid-cols-1 gap-12 p-12 md:p-4 sm:p-8 lg:p-12 mt-8 sm:mt-12 md:mt-16 lg:mt-24 xl:mt-36 text-[#222] bg-[#099268]"
     >
       <div class="grid grid-cols-2 max-[450px]:grid-cols-1 gap-12 w-full">
         <div id="footer-logo-and-story">
