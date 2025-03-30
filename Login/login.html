@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="w-full h-full">
+    <main
+      id="container"
+      class="w-full h-full grid grid-cols-1 gap-6 md:grid-cols-2 rounded-md"
+    >
+      <section
+        id="image-container"
+        style="
+          background: url('https://images.pexels.com/photos/16986072/pexels-photo-16986072/free-photo-of-venice-girl.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      ></section>
+      <section
+        id="login-container"
+        class="flex flex-col gap-8 items-center justify-center px-4"
+      >
+        <header class="self-start">
+          <h3
+            id="login-title"
+            class="text-5xl uppercase font-extralight tracking-widest mb-4"
+          >
+            Login
+          </h3>
+          <p class="text-[#aaa]">Welcome Back! Please login to continue</p>
+        </header>
+
+        <form
+          action=""
+          id="login"
+          class="grid grid-cols-2 gap-6 place-content-center"
+        >
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            required
+            placeholder="Your Email"
+            class="border-1 rounded-md h-8 text-center"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="passwordf"
+            name="password"
+            required
+            placeholder="Your Password"
+            class="border-1 rounded-md h-8 text-center"
+          />
+          <span class="flex gap-2 col-start-2"
+            ><input type="checkbox" />
+            <p>Remember me</p></span
+          >
+          <input
+            type="submit"
+            value="Log In"
+            class="uppercase font-extralight col-start-2 tracking-widest bg-black text-[#a6e1fa] py-2 rounded-md"
+          />
+        </form>
+        <div class="self-start text-amber-400 font-semibold">
+          <a href="">Forgot Password</a>
+        </div>
+        <div id="buttons" class="flex flex-col gap-4">
+          <div
+            class="capitalize cursor-pointer bg-black text-[#a6e1fa] w-full px-8 py-4 rounded-md text-center"
+          >
+            Continue with Google
+          </div>
+          <p class="uppercase tracking-widest font-extralight text-center">
+            or
+          </p>
+
+          <div
+            id="register-with-mail-button"
+            class="capitalize cursor-pointer bg-black text-center px-8 py-4 text-[#a6e1fa] rounded-md"
+          >
+            Register with email
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="registration-container"
+        class="flex flex-col gap-8 items-center justify-center px-4 hidden"
+      >
+        <header class="self-start">
+          <h3
+            id="register-title"
+            class="text-5xl uppercase font-extralight tracking-widest mb-4"
+          >
+            Register
+          </h3>
+          <p class="text-[#aaa]">
+            Welcome! Please input necessary informations to continue!
+          </p>
+        </header>
+
+        <form
+          action=""
+          id="registration"
+          class="grid grid-cols-2 gap-6 place-content-center"
+        >
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            required
+            placeholder="Your Full Name"
+            class="border-1 rounded-md h-8 text-center"
+          />
+
+          <label for="r_email">Email</label>
+          <input
+            type="email"
+            id="r_email"
+            name="r_email"
+            required
+            placeholder="Your Email"
+            class="border-1 rounded-md h-8 text-center"
+          />
+          <label for="new_password">New Password</label>
+          <input
+            type="password"
+            id="new_password"
+            name="new_password"
+            required
+            placeholder="New Password"
+            class="border-1 rounded-md h-8 text-center"
+          />
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="confirm_password"
+            id="confirm_password"
+            name="confirm_password"
+            required
+            placeholder="Confirm Password"
+            class="border-1 rounded-md h-8 text-center"
+          />
+
+          <input
+            type="submit"
+            value="Register"
+            class="uppercase font-extralight col-start-2 tracking-widest bg-black text-[#a6e1fa] py-2 rounded-md"
+          />
+        </form>
+
+        <div id="buttons" class="flex flex-col gap-4">
+          <div
+            id="back-to-login-page"
+            class="capitalize block cursor-pointer border-blue-900 border text-slate-700 w-full px-8 py-4 rounded-md text-center"
+          >
+            Back to Login Page
+          </div>
+          <p class="uppercase tracking-widest font-extralight text-center">
+            or
+          </p>
+          <div
+            class="capitalize cursor-pointer block bg-black text-[#a6e1fa] w-full px-8 py-4 rounded-md text-center"
+          >
+            Continue with Google
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
