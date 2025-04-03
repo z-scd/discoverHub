@@ -12,17 +12,19 @@
       class="w-full h-full grid grid-cols-1 gap-6 md:grid-cols-2 rounded-md"
     >
       <section
-        id="image-container"
-        style="
-          background: url('https://images.pexels.com/photos/16986072/pexels-photo-16986072/free-photo-of-venice-girl.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-        "
-      ></section>
+        id="side-container"
+        class="flex justify-center items-center overflow-x-hidden rounded-r-4xl bg-black text-white"
+      >
+        <span
+          id="side-bar-text"
+          class="text-[8vw] m-12 font-extrabold uppercase tracking-tighter"
+        >
+          <p>Welcome back &rAarr;</p>
+        </span>
+      </section>
       <section
         id="login-container"
-        class="flex flex-col gap-8 items-center justify-center px-4"
+        class="flex flex-col gap-8 items-center justify-center mx-4"
       >
         <header class="self-start">
           <h3
@@ -82,7 +84,7 @@
 
           <div
             id="register-with-mail-button"
-            class="capitalize cursor-pointer bg-black text-center px-8 py-4 text-[#a6e1fa] rounded-md"
+            class="capitalize cursor-pointer text-center px-8 py-4 text-black border rounded-md"
           >
             Register with email
           </div>
@@ -91,7 +93,7 @@
 
       <section
         id="registration-container"
-        class="flex flex-col gap-8 items-center justify-center px-4 hidden"
+        class="flex flex-col gap-8 items-center justify-center mx-4"
       >
         <header class="self-start">
           <h3
@@ -173,6 +175,12 @@
         </div>
       </section>
     </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

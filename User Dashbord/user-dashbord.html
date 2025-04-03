@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>User Dashbord</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full h-full">
+    <header class="h-[10%] bg-black text-[#a6e1fa]">
+      <nav class="flex justify-between px-4 items-center">
+        <div id="logo">
+          <img
+            src="../Photos/logo/logo.png"
+            alt="discoverhub logo"
+            class="w-[120px]"
+          />
+        </div>
+        <div id="notification" class="flex gap-4">
+          <span id="message"><i class="ri-message-2-line"></i></span>
+          <span id="notification"><i class="ri-notification-3-line"></i></span>
+          <span id="logout"><i class="ri-logout-circle-r-line"></i></span>
+        </div>
+      </nav>
+    </header>
+    <main class="h-[90%] w-full">
+      <section
+        id="sidebar"
+        class="h-full w-[15%] bg-black text-[#a6e1fa] flex flex-col justify-around items-center"
+      >
+        <div id="profile-info" class="flex items-center flex-col gap-4">
+          <div
+            id="profile-image"
+            style="
+              background: url('https://images.pexels.com/photos/8517921/pexels-photo-8517921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+              background-position: center;
+              background-size: cover;
+              width: 80px;
+              height: 80px;
+              border-radius: 100%;
+            "
+          ></div>
+
+          <div id="user-info" class="text-center">
+            <p>Name</p>
+            <p class="text-sm text-[#aaa]">Email</p>
+            <p id="local-time">Local time</p>
+          </div>
+        </div>
+
+        <menu class="flex flex-col gap-2">
+          <span> <i class="ri-calendar-event-line"></i> Events</span>
+          <span> <i class="ri-user-settings-line"></i> Settings</span>
+          <span> <i class="ri-lock-password-line"></i> Security</span>
+        </menu>
+
+        <div class="flex flex-col gap-2">
+          <span> <i class="ri-questionnaire-line"></i> FAQs</span>
+          <span> <i class="ri-feedback-line"></i> Feedback</span>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
